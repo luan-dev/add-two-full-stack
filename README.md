@@ -24,6 +24,14 @@ docker-compose up
 
 The API will run on port `8080` and the front-end will run on port `3000`.
 
+## Testing
+
+Tests are included for the API to ensure endpoints are working as expected.
+Currently, there are no tests for the frontend
+
+The testing suite is also run in a [GitHub Actions workflow](https://github.com/luan-dev/add-two-full-stack/actions).
+This is a way to run the tests in a continuous integration environment
+
 ## API
 
 The API has one endpoint: `/add`.
