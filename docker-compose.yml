@@ -1,0 +1,28 @@
+---
+# this should mainly be used for testing
+version: "3.9"
+
+services:
+    # backend
+    api:
+        container_name: api
+        build:
+            context: api
+            dockerfile: Dockerfile
+        ports:
+            - "8080:8080"
+        volumes:
+            - "./api:/app" # this will allow for hot-reloading during dev
+        init: true
+
+    # frontend
+    frontend:
+        container_name: frontend
+        build:
+            context: frontend
+            dockerfile: Dockerfile
+        ports:
+            - "3000:3000"
+        volumes:
+            - "./frontend:/app" # this will allow for hot-reloading during dev
+        init: true
