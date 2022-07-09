@@ -11,8 +11,8 @@
         "build": "react-scripts build",
         "test": "react-scripts test",
         "eject": "react-scripts eject",
-        "prettier": "prettier --write {**/*,*}.{ts,tsx,js,jsx,json,md,css,scss,less,sass}",
-        "prettier:check": "prettier --check  {**/*,*}.{ts,tsx,js,jsx,json,md,css,scss,less,sass}"
+        "prettier": "prettier --write .",
+        "prettier:check": "prettier --check ."
     },
     "dependencies": {
         "@emotion/react": "^11.9.3",
