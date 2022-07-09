@@ -10,7 +10,9 @@
         "start": "react-scripts start",
         "build": "react-scripts build",
         "test": "react-scripts test",
-        "eject": "react-scripts eject"
+        "eject": "react-scripts eject",
+        "prettier": "prettier --write {**/*,*}.{ts,tsx,js,jsx,json,md,css,scss,less,sass}",
+        "prettier:check": "prettier --check  {**/*,*}.{ts,tsx,js,jsx,json,md,css,scss,less,sass}"
     },
     "dependencies": {
         "@emotion/react": "^11.9.3",
@@ -47,5 +49,8 @@
             "last 1 firefox version",
             "last 1 safari version"
         ]
+    },
+    "devDependencies": {
+        "prettier": "^2.7.1"
     }
 }
