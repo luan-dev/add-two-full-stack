@@ -11,8 +11,6 @@ services:
             dockerfile: Dockerfile
         ports:
             - "8080:8080"
-        volumes:
-            - "./api:/app" # this will allow for hot-reloading during dev
         init: true
 
     # frontend
@@ -23,6 +21,4 @@ services:
             dockerfile: Dockerfile
         ports:
             - "3000:3000"
-        volumes:
-            - "./frontend:/app" # this will allow for hot-reloading during dev
         init: true
